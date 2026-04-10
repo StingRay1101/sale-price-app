@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sale Price App</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: #f6f6f7;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+    }
+    .card {
+      background: white;
+      border-radius: 12px;
+      padding: 40px;
+      max-width: 520px;
+      width: 100%;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    .icon {
+      width: 64px;
+      height: 64px;
+      background: #008060;
+      border-radius: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 24px;
+      font-size: 32px;
+    }
+    h1 { font-size: 24px; font-weight: 700; color: #1a1a1a; margin-bottom: 8px; }
+    .subtitle { font-size: 15px; color: #6b7280; margin-bottom: 32px; line-height: 1.5; }
+    .rule-box {
+      background: #f0fdf4;
+      border: 1.5px solid #bbf7d0;
+      border-radius: 10px;
+      padding: 20px 24px;
+      margin-bottom: 32px;
+      text-align: left;
+    }
+    .rule-label {
+      font-size: 11px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #059669;
+      margin-bottom: 8px;
+    }
+    .rule-text { font-size: 15px; color: #1a1a1a; font-weight: 500; }
+    .rule-text span { color: #008060; font-weight: 700; }
+    .instructions {
+      background: #fafafa;
+      border-radius: 10px;
+      padding: 20px 24px;
+      text-align: left;
+      margin-bottom: 24px;
+    }
+    .instructions p {
+      font-size: 13px;
+      font-weight: 600;
+      color: #6b7280;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      margin-bottom: 12px;
+    }
+    .instructions ol { padding-left: 18px; }
+    .instructions li { font-size: 14px; color: #374151; margin-bottom: 8px; line-height: 1.5; }
+    .footer { font-size: 12px; color: #9ca3af; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="icon">🏷️</div>
+    <h1>Sale Price App</h1>
+    <p class="subtitle">Automatically discounts eligible items to a fixed sale price at checkout. No coupon code required.</p>
+
+    <div class="rule-box">
+      <div class="rule-label">Current Rule</div>
+      <div class="rule-text">Items priced under <span>$49.96</span> are discounted to <span>$25.00</span> at checkout.</div>
+    </div>
+
+    <div class="instructions">
+      <p>To activate or deactivate the sale</p>
+      <ol>
+        <li>Go to <strong>Discounts</strong> in your Shopify admin</li>
+        <li>Click <strong>Create discount</strong> then <strong>Discount app</strong></li>
+        <li>Select <strong>under-4996-sale-discount</strong></li>
+        <li>Set it to automatic, choose your dates, and save</li>
+      </ol>
+    </div>
+
+    <p class="footer">Sale Price App - Green Bean Imports PTY LTD</p>
+  </div>
+</body>
+</html>
